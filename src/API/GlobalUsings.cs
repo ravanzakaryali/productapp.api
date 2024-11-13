@@ -1,0 +1,10 @@
+global using Microsoft.AspNetCore.Mvc;
+global using MediatR;
+global using ProductApp.Application.Handlers;
+global using ProductApp.Application.DTOs;
+global using ProductApp.Application;
+global using ProductApp.Infrastructure;
+global using Newtonsoft.Json;
+global using Newtonsoft.Json.Serialization;
+global using System.Net;
+global using ProductApp.API.Middlewares;

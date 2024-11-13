@@ -1,0 +1,12 @@
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/bin/Debug/net8.0/Domain.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
