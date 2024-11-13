@@ -3266,19 +3266,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ravan/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/API.csproj",
+      "projectUniqueName": "/var/www/productapp.api/src/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/API.csproj",
-      "packagesPath": "/Users/ravan/.nuget/packages/",
-      "outputPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/obj/",
+      "projectPath": "/var/www/productapp.api/src/API/API.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/var/www/productapp.api/src/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ravan/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3290,8 +3290,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj"
+            "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj"
             }
           }
         }
@@ -3300,11 +3300,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3339,7 +3334,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -599,19 +599,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ravan/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj",
+      "projectUniqueName": "/var/www/productapp.api/src/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj",
-      "packagesPath": "/Users/ravan/.nuget/packages/",
-      "outputPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/",
+      "projectPath": "/var/www/productapp.api/src/Domain/Domain.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/var/www/productapp.api/src/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ravan/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -629,11 +629,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -661,7 +656,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

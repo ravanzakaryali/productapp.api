@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj": {}
+    "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/Application.csproj": {
+    "/var/www/productapp.api/src/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/Application.csproj",
+        "projectUniqueName": "/var/www/productapp.api/src/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/Application.csproj",
-        "packagesPath": "/Users/ravan/.nuget/packages/",
-        "outputPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/obj/",
+        "projectPath": "/var/www/productapp.api/src/Application/Application.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/var/www/productapp.api/src/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ravan/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj"
+              "/var/www/productapp.api/src/Domain/Domain.csproj": {
+                "projectPath": "/var/www/productapp.api/src/Domain/Domain.csproj"
               }
             }
           }
@@ -36,11 +36,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -76,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj": {
+    "/var/www/productapp.api/src/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj",
+        "projectUniqueName": "/var/www/productapp.api/src/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/Domain.csproj",
-        "packagesPath": "/Users/ravan/.nuget/packages/",
-        "outputPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/",
+        "projectPath": "/var/www/productapp.api/src/Domain/Domain.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/var/www/productapp.api/src/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ravan/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -108,11 +103,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -140,21 +130,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj": {
+    "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/Users/ravan/.nuget/packages/",
-        "outputPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/obj/",
+        "projectPath": "/var/www/productapp.api/src/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/var/www/productapp.api/src/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ravan/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -166,8 +156,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/Application.csproj": {
-                "projectPath": "/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/Application.csproj"
+              "/var/www/productapp.api/src/Application/Application.csproj": {
+                "projectPath": "/var/www/productapp.api/src/Application/Application.csproj"
               }
             }
           }
@@ -176,11 +166,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -202,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
