@@ -6,7 +6,9 @@ public static class ConfigureService
     {
         services.AddHttpContextAccessor();
         services.AddMediatR(opt => opt.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-        // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
+        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
+
         return services;
     }
 }

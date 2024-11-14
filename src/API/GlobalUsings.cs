@@ -6,5 +6,6 @@ global using ProductApp.Application;
 global using ProductApp.Infrastructure;
 global using Newtonsoft.Json;
 global using Newtonsoft.Json.Serialization;
+global using FluentValidation;
 global using System.Net;
 global using ProductApp.API.Middlewares;

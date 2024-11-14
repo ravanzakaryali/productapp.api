@@ -1,3 +1,6 @@
+
+using ProductApp.Application.Exceptions;
+
 namespace ProductApp.API.Middlewares;
 
 public class ExceptionHandling
@@ -16,6 +19,17 @@ public class ExceptionHandling
         {
             await _next(httpContext);
         }
+        catch (NotFoundException ex)
+        {
+            ErrorResponse error = await HandleExceptionAsync(httpContext, ex, HttpStatusCode.NotFound);
+            _logger.LogError(ex, $"Request {httpContext.Request?.Method}: {httpContext.Request?.Path.Value} failed Error: {@error}", error);
+        }
+        catch (ValidationException ex)
+        {
+            ErrorResponse error = await HandleExceptionAsync(httpContext, ex, HttpStatusCode.BadRequest);
+            _logger.LogError(ex, $"Request {httpContext.Request?.Method}: {httpContext.Request?.Path.Value} failed Error: {@error}", error);
+
+        }
         catch (Exception ex)
         {
             ErrorResponse error = await HandleExceptionAsync(httpContext, ex);
@@ -27,9 +41,9 @@ public class ExceptionHandling
     {
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = (int)statusCode;
-        Console.WriteLine(context.Response.StatusCode);
         ErrorResponse response = new()
         {
+            StatusCode = context.Response.StatusCode,
             Message = message ?? exception.Message,
         };
         string json = JsonConvert.SerializeObject(response, new JsonSerializerSettings()

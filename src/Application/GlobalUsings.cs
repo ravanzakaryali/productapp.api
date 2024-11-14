@@ -9,5 +9,8 @@ global using System.Reflection;
 global using Microsoft.Extensions.DependencyInjection;
 global using ProductApp.Abstracts.Repositories;
 global using ProductApp.Application.Exceptions;
+global using ProductApp.Application.Behaviours; 
+global using FluentValidation.Results;
+global using ProductApp.Application.Handlers;
 
-
+global using Microsoft.AspNetCore.Http;

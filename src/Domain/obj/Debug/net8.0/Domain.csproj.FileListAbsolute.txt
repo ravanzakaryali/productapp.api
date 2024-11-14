@@ -23,3 +23,4 @@
 /var/www/productapp.api/src/Domain/obj/Debug/net8.0/refint/Domain.dll
 /var/www/productapp.api/src/Domain/obj/Debug/net8.0/Domain.pdb
 /var/www/productapp.api/src/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Domain/obj/Debug/net8.0/Domain.sourcelink.json

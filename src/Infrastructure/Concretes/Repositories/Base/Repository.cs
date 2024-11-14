@@ -9,9 +9,11 @@ public class Repository<T>(IMongoDatabase database, string collectionName) : IRe
         await _collection.InsertOneAsync(entity);
     }
 
-    public async Task<T> GetByIdAsync(string id)
+    public async Task<T?> GetByIdAsync(string id)
     {
-        var filter = Builders<T>.Filter.Eq("_id", new ObjectId(id));
+        FilterDefinition<T> filter = Builders<T>.Filter.Eq("_id", id);
+        if (filter == null)
+            return null;
         return await _collection.Find(filter).FirstOrDefaultAsync();
     }
 
@@ -27,13 +29,13 @@ public class Repository<T>(IMongoDatabase database, string collectionName) : IRe
 
     public async Task UpdateAsync(string id, T entity)
     {
-        var filter = Builders<T>.Filter.Eq("_id", new ObjectId(id));
+        var filter = Builders<T>.Filter.Eq("_id", id);
         await _collection.ReplaceOneAsync(filter, entity);
     }
 
     public async Task DeleteAsync(string id)
     {
-        var filter = Builders<T>.Filter.Eq("_id", new ObjectId(id));
+        var filter = Builders<T>.Filter.Eq("_id", id);
         await _collection.DeleteOneAsync(filter);
     }
 }

@@ -33,3 +33,4 @@
 /var/www/productapp.api/src/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
 /var/www/productapp.api/src/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /var/www/productapp.api/src/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json

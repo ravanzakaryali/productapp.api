@@ -29,3 +29,4 @@
 /var/www/productapp.api/src/Application/obj/Debug/net8.0/refint/Application.dll
 /var/www/productapp.api/src/Application/obj/Debug/net8.0/Application.pdb
 /var/www/productapp.api/src/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/Application/obj/Debug/net8.0/Application.sourcelink.json

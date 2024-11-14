@@ -3,30 +3,27 @@ namespace ProductApp.Application.Behaviours;
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {
     private readonly IEnumerable<IValidator<TRequest>> _validators;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public ValidationBehaviour(IEnumerable<IValidator<TRequest>> validators)
+    public ValidationBehaviour(IEnumerable<IValidator<TRequest>> validators, IHttpContextAccessor httpContextAccessor)
     {
-        _validators = validators ?? throw new ArgumentNullException(nameof(validators));
+        _validators = validators;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
-        if (_validators.Any())
+        var context = new ValidationContext<TRequest>(request);
+        List<ValidationFailure> failures = _validators
+            .Select(v => v.Validate(context))
+            .SelectMany(result => result.Errors)
+            .Where(f => f != null)
+            .ToList();
+
+        if (failures.Count != 0)
         {
-            var context = new ValidationContext<TRequest>(request);
-
-            var failures = _validators
-                .Select(v => v.Validate(context))
-                .SelectMany(result => result.Errors)
-                .Where(f => f != null)
-                .ToList();
-
-            if (failures.Count > 0)
-            {
-                throw new ValidationException("Validation error(s) occurred. See the 'errors' property for details.", failures);
-            }
+            throw new ValidationException(failures[0].ErrorMessage, failures);
         }
-
         return await next();
     }
 }

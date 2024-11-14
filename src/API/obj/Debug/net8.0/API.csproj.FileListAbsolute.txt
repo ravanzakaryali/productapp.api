@@ -101,3 +101,6 @@
 /var/www/productapp.api/src/API/obj/Debug/net8.0/API.pdb
 /var/www/productapp.api/src/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /var/www/productapp.api/src/API/obj/Debug/net8.0/ref/API.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/obj/Debug/net8.0/API.sourcelink.json
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/ravan/Documents/8.DSfoftware/productapp.api/src/API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
