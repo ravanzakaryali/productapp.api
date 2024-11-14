@@ -12,14 +12,14 @@ RUN dotnet restore
 
 COPY . .
 
-# WORKDIR "/src/API"
 RUN dotnet publish "src/API/API.csproj" -c Release -o /out
 
-# RUN dotnet publish "SikayetVar.API.csproj" -c Release -o /app/publish
-
-
+# 2. Aşama: Runtime aşaması
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+
+# Set the application to listen on localhost:8080
+ENV ASPNETCORE_URLS=http://0.0.0.0:8081
 
 COPY --from=build /out .
 

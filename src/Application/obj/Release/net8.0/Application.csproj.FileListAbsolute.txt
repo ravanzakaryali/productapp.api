@@ -1,0 +1,16 @@
+/var/www/productapp.api/src/Application/bin/Release/net8.0/Application.deps.json
+/var/www/productapp.api/src/Application/bin/Release/net8.0/Application.dll
+/var/www/productapp.api/src/Application/bin/Release/net8.0/Application.pdb
+/var/www/productapp.api/src/Application/bin/Release/net8.0/Domain.dll
+/var/www/productapp.api/src/Application/bin/Release/net8.0/Domain.pdb
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.csproj.AssemblyReference.cache
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.AssemblyInfoInputs.cache
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.AssemblyInfo.cs
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.csproj.CoreCompileInputs.cache
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.sourcelink.json
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.csproj.CopyComplete
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.dll
+/var/www/productapp.api/src/Application/obj/Release/net8.0/refint/Application.dll
+/var/www/productapp.api/src/Application/obj/Release/net8.0/Application.pdb
+/var/www/productapp.api/src/Application/obj/Release/net8.0/ref/Application.dll

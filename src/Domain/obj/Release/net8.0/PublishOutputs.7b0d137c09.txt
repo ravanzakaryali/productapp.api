@@ -1,0 +1,10 @@
+/path/to/publish/folder/Domain.dll
+/path/to/publish/folder/Domain.deps.json
+/path/to/publish/folder/Domain.pdb
+/path/to/publish/folder/DnsClient.dll
+/path/to/publish/folder/Microsoft.Extensions.Logging.Abstractions.dll
+/path/to/publish/folder/MongoDB.Bson.dll
+/path/to/publish/folder/MongoDB.Driver.dll
+/path/to/publish/folder/SharpCompress.dll
+/path/to/publish/folder/Snappier.dll
+/path/to/publish/folder/ZstdSharp.dll
