@@ -7,10 +7,11 @@ builder.Services.AddCors(options =>
 
                       builder =>
                       {
-                          builder.WithOrigins("http://localhost:3000")
-                                                .AllowAnyHeader()
-                                                .AllowAnyMethod()
-                                                .AllowCredentials();
+                          builder
+                                .AllowAnyOrigin()
+                                .AllowAnyHeader()
+                                .AllowAnyMethod()
+                                .AllowCredentials();
                       });
 });
 builder.Services.AddControllers();
