@@ -16,14 +16,20 @@ internal class UpdateProductCommandHandler(IProductRepository productRepository)
         Product? product = await _productRepository.GetByIdAsync(request.Id)
             ?? throw new NotFoundException(nameof(Product), request.Id);
 
-        await _productRepository.UpdateAsync(request.Id, product);
+        await _productRepository.UpdateAsync(request.Id, new Product()
+        {
+            Id = product.Id,
+            Title = request.Title,
+            Description = request.Description,
+            Price = request.Price
+        });
 
         return new GetProductDto
         {
             Id = product.Id,
-            Title = product.Title,
-            Description = product.Description,
-            Price = product.Price
+            Title = request.Title,
+            Description = request.Description,
+            Price = request.Price
         };
     }
 }
